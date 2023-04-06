@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+.homepage{
+    color: blueviolet;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 150px;
+    font-family: Elephant;
+}
+
+html, body { height: 100%; font-size: large;}
+body { margin: 0; font-family: Elephant, "Helvetica Neue", sans-serif; }
+
+.example-icon {
+    padding: 20px;
+}
+
+.example-spacer {
+    flex: 2 2 auto;
+}
+
+.mat-drawer-container {
+    background-color: black;
+}
+
+.mat-drawer {
+     background-color: lightblue;
+}
+.mat-elevation-z5 {
+    position:relative;
+    z-index: 2;
+}
+
+.mat-sidenav a:hover {
+    color: blue;
+}
+
