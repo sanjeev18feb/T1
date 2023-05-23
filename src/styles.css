@@ -1,8 +1,8 @@
 .homepage{
-    color: blueviolet;
-    text-align: center;
-    font-size: 40px;
-    margin-top: 150px;
+    color: black;
+    text-align:center;
+    font-size: 30px;
+    
     font-family: Elephant;
 }
 
@@ -14,7 +14,7 @@ body { margin: 0; font-family: Elephant, "Helvetica Neue", sans-serif; }
 }
 
 .example-spacer {
-    flex: 2 2 auto;
+    flex: 1 1 auto;
 }
 
 .mat-drawer-container {
@@ -30,6 +30,7 @@ body { margin: 0; font-family: Elephant, "Helvetica Neue", sans-serif; }
 }
 
 .mat-sidenav a:hover {
-    color: blue;
+    color: Red;
 }
+
 

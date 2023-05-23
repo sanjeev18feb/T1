@@ -1,8 +1,9 @@
+<h1>DASHBOARD</h1><hr>
 <mat-form-field>
-    <input matInput placeholder="Enter your mail Id">
+    <input matInput placeholder="Enter your mail Id" [(ngModel)]="name">
 </mat-form-field><br>
 <mat-form-field>
-    <input type="password" matInput placeholder="Enter your Password">
+    <input type="password" matInput placeholder="Enter your Password" >
 </mat-form-field><br>
-<button mat-raised-button>Login</button>
+<button class="btn btn-danger" [disabled]="name===''" (click)="name=''" >Login</button>
 

@@ -14,6 +14,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
+
+
 
 import { OneComponent } from './one/one.component';
 import { StudentComponent } from './student/student.component';
@@ -21,6 +24,10 @@ import { CustomerComponent } from './customer/customer.component';
 import { TestsuiteComponent } from './testsuite/testsuite.component';
 import { DatasetComponent } from './dataset/dataset.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { SettingComponent } from './setting/setting.component';
+import { HomeComponent } from './home/home.component';
+import { ContactsComponent } from './contacts/contacts.component';
+
 
 const routes: Routes = [
   {path:'one', component:OneComponent},
@@ -28,7 +35,10 @@ const routes: Routes = [
   {path:'customer', component:CustomerComponent},
   {path:'Testsuite', component:TestsuiteComponent},
   {path:'dataset', component:DatasetComponent},
-  {path:'feedback', component:FeedbackComponent}
+  {path:'feedback', component:FeedbackComponent},
+  {path:'setting', component:SettingComponent},
+  {path:'home', component:HomeComponent},
+  {path:'contacts', component:ContactsComponent}
 ];
 
 @NgModule({
@@ -39,14 +49,17 @@ const routes: Routes = [
     CustomerComponent,
     TestsuiteComponent,
     DatasetComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    SettingComponent,
+    HomeComponent,
+    ContactsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,FormsModule,
     AppRoutingModule,MatFormFieldModule,MatInputModule,
     BrowserAnimationsModule,MatCardModule,MatDatepickerModule,MatToolbarModule,MatIconModule,MatSidenavModule,
     MatListModule,MatButtonModule,RouterModule.forRoot(routes)
-    
+     
   
   ],
   providers: [],

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./one.component.css']
 })
 export class OneComponent {
+  
+  name:string="";
 
 }

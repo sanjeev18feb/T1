@@ -1,1 +1,5 @@
-<button mat-button>Dataset</button>
+<h1>Dataset</h1>
+<input type="text" class="mat-drawer-container" [(ngModel)]="name" >
+<button class="btn btn-danger" [disabled]="name===''" (click)="name=''" >Reset</button>
+
+

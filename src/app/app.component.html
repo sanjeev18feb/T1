@@ -2,19 +2,19 @@
 <mat-toolbar-row>
   <span>Attest</span>
   <span class="example-spacer"></span>
-  <button mat-icon-button><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+  <button mat-icon-button routerLink="home"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
     </button>
-    <button mat-icon-button><mat-icon aria-hidden="false" aria-label="Settings icon" fontIcon="settings"></mat-icon>
+    <button mat-icon-button routerLink="setting"><mat-icon aria-hidden="false" aria-label="Settings icon" fontIcon="settings"></mat-icon>
     </button>
-    <button mat-icon-button><mat-icon aria-hidden="false" aria-label="Example contact icon" fontIcon="contacts"></mat-icon>
+    <button mat-icon-button routerLink="contacts"><mat-icon aria-hidden="false" aria-label="Example contact icon" fontIcon="contacts"></mat-icon>
 </button>
 </mat-toolbar-row>
-</mat-toolbar>
+</mat-toolbar> 
 
 <mat-sidenav-container>
-       <mat-sidenav mode="side" opened>
+       <mat-sidenav mode="side" opened >
             <mat-nav-list style="width: 200px;">
-                  <a mat-list-item routerLink="one"><mat-icon>dashboard</mat-icon>Dashboard</a>
+                  <a mat-list-item  routerLink="one"><mat-icon>dashboard</mat-icon>Dashboard</a>
                   <a mat-list-item routerLink="student"><mat-icon>assignment</mat-icon>Function</a>
                   <a mat-list-item routerLink="customer"><mat-icon>build</mat-icon>Scenario</a>
                   <a mat-list-item routerLink="Testsuite"><mat-icon>class</mat-icon>Testsuite</a>
@@ -28,3 +28,6 @@
             </p>
           </mat-sidenav-content>
 </mat-sidenav-container>
+
+<input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone:true}">
+<p>{{name}}</p>
